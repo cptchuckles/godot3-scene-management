@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://goto_button.gd" type="Script" id=1]
+
+[node name="GoToButton" type="Button"]
+margin_right = 129.0
+margin_bottom = 35.0
+text = "Go To..."
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

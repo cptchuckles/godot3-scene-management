@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://goto_button.tscn" type="PackedScene" id=1]
+
+[node name="main" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 419.0
+margin_top = 130.0
+margin_right = 561.0
+margin_bottom = 178.0
+text = "this is the main scene
+
+yeet"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" parent="." instance=ExtResource( 1 )]
+margin_left = 244.0
+margin_top = 245.0
+margin_right = 373.0
+margin_bottom = 356.0
+text = "Go To scene A"
+SCENE_KEY = "SceneA"
+
+[node name="Button2" parent="." instance=ExtResource( 1 )]
+margin_left = 474.0
+margin_top = 286.0
+margin_right = 809.0
+margin_bottom = 321.0
+text = "load scene B"
+SCENE_KEY = "SceneB"
