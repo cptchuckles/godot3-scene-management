@@ -12,10 +12,7 @@ accessible to all scripts throughout the project, which elides the circular refe
 
 
 func _ready() -> void:
-  print(name + ".Scenes = {")
-  for key in Scenes.keys():
-    print("\t'" + key + "' => '" + Scenes[key].resource_path + "',")
-  print("}")
+  print(var2str(Scenes))
 
 func goto_scene(name: String) -> void:
   get_tree().change_scene_to(Scenes[name])
