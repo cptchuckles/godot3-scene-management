@@ -2,6 +2,9 @@ extends Node
 
 export(Dictionary) var Scenes
 """
+Types should be String => PackedScene, but sadly it is impossible to give type hints
+for Dictionaries.
+
 This needs to be populated via the Inspector if you want the scenes' Resource Paths to update
 dynamically as you move things around and rename them via Godot's built-in FileSystem pane.
 
