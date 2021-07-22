@@ -15,7 +15,7 @@ accessible to all scripts throughout the project, which elides the circular refe
 
 
 func _ready() -> void:
-  print(var2str(Scenes))
+	print(var2str(Scenes))
 
 func goto_scene(name: String) -> void:
-  get_tree().change_scene_to(Scenes[name])
+	get_tree().change_scene_to(Scenes[name])
