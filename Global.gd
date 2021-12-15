@@ -15,7 +15,11 @@ accessible to all scripts throughout the project, which elides the circular refe
 
 
 func _ready() -> void:
-	print(var2str(Scenes))
+	print_debug(var2str(Scenes))
 
-func goto_scene(name: String) -> void:
-	get_tree().change_scene_to(Scenes[name])
+
+func goto_scene(scene_name: String) -> int:
+	if not scene_name in Scenes:
+		return ERR_DOES_NOT_EXIST
+
+	return get_tree().change_scene_to(Scenes.get(scene_name))

@@ -21,7 +21,7 @@ margin_top = 378.0
 margin_right = 367.0
 margin_bottom = 413.0
 text = "A"
-SCENE_KEY = "SceneA"
+SCENE_NAME = "SceneA"
 
 [node name="Button2" parent="." instance=ExtResource( 1 )]
 margin_left = 750.0
@@ -29,4 +29,4 @@ margin_top = 78.0
 margin_right = 879.0
 margin_bottom = 428.0
 text = "MAIN"
-SCENE_KEY = "Main"
+SCENE_NAME = "Main"
